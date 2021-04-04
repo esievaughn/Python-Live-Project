@@ -11,6 +11,12 @@ I created two models to map to two databases. The attributes in class Planner co
 
 I then created a forms.py and functions to render the forms to their corresponding templates. In forms.py, I utilizied widgets for suggestions on user input, and imported layout to render the form as a crispy form.
 
+- [MODELS: modelforms](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Code%20Snippets/GardenApp_models.png)
+
+- [FORMS: form layouts & widgets](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Code%20Snippets/GardenApp_forms.png)
+
+- [VIEWS: render Forms](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Code%20Snippets/GardenApp_renderforms.png)
+
 ![](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Images/form.png)
 
 
@@ -18,15 +24,23 @@ I then created a forms.py and functions to render the forms to their correspondi
 
 After the forms rendered and user input saved successfully to the database, I created function that gets all items from the database and sends them to the allvegetables template which is linked from the home template as “Your Garden”. This template displays all vegetables and minimal data from both databases.
 
+- [VIEWS: display all and details](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Code%20Snippets/GardenApp_displaydetails.png)
+- [TEMPLATE: display all](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Code%20Snippets/GardenApp_displayalltemplate.png)
+
 ![](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Images/displayall.png)
 
 
 #### Details, Edit & Delete
 From the allvegetables template, users can select an individual vegetable either from the Planner or Tracker table that renders onto a details template displaying all the information the user has submitted. The function to render the corresponding templates matches a pk argument in URL which selects an individual vegetable based on id, and also raises a 404 error if selected object does not exist. Aside from the get_object_or_404 method, I also used the objects.all() method so both templates would pull the corresponding information from the other database if the data exists. Both templates are inverse each other so users have access to both data tables regardless of which table they select from the allvegetable template.
+
 ![](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Images/details.png)
 
 
 In the details page, users also have the option to select edit or delete on the Planner and Tracker details. Like the details template, a pk is assigned to match the url calling the right function. However, the edit functions also pass an instance in the form POST request, so the form is populated with data the user already submitted.
+
+- [VIEWS: edit forms](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Code%20Snippets/GardenApp_editforms.png)
+- [VIEWS: delete forms](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Code%20Snippets/GardenApp_deleteforms.png)
+
 ![](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Images/edits.png)
 ![](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Images/delete.png)
 
