@@ -15,7 +15,7 @@ I then created a forms.py and functions to render the forms to their correspondi
 
 - [FORMS: form layouts & widgets](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Code%20Snippets/GardenApp_forms.png)
 
-- [VIEWS: render Forms](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Code%20Snippets/GardenApp_renderforms.png)
+- [VIEWS: render forms](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Code%20Snippets/GardenApp_renderforms.png)
 
 ![](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Images/form.png)
 
