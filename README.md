@@ -22,6 +22,7 @@ From the allvegetables template, users can select an individual vegetable either
 
 In the details page, users also have the option to select edit or delete on the Planner and Tracker details. Like the details template, a pk is assigned to match the url calling the right function. However, the edit functions also pass an instance in the form POST request, so the form is populated with data the user already submitted.
 
+#### API
 This completed Django CRUD functionality. From here I began my last user story starting to connect to an external API. I chose Trefle API which is a botanical database hoping to let users search for specific plants and their information, saving them to the GardenApp for additional information. I successfully connected to the API and rendered information along with corresponding images. But did not complete the user search feature. This is a task I plan to return to when I finish the full stack bootcamp. 
 
 
