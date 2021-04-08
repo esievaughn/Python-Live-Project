@@ -9,7 +9,7 @@ For the Python Live Project, I worked a two week sprint on scrum team developing
 #### Models & Forms
 I created two models to map to two databases. The attributes in class Planner correspond with preseason garden planning, and attributes in class Tracker correspond to tracking data during the growing season and during harvest. In the code snippet below, the zone type attribute has a tuple that correlates to the the choice field, allowing users to choose from the provided growing zones. The class Tracker is connected to class Planner via a foreign key. This ensures users can pull up the same vegetable on their tracker form as their planner form, and add additional information. I had originally assigned a primary key (pk) on class Planner not realizing Django automatically assigns pk's. Once I deleted the pk, both tables connected in the database.
 
-I then created a forms.py and functions to render the forms to their corresponding templates. In forms.py, I utilizied widgets for suggestions on user input, and imported layout to render the form as a crispy form.
+I then created a forms.py and functions to render the forms to their corresponding templates. In forms.py, I utilizied widgets for suggestions on user input, and imported layout to render the form as a crispy form. In this early stage, I learned the importance of indentation in developing functions, as one of my else statements that accounts for user spaces or blank inputs did not initially work when it was indented too far. 
 
 - [MODELS: modelforms](https://github.com/esievaughn/Python-Live-Project/blob/main/GardenApp%20Code%20Snippets/GardenApp_models.png)
 
