@@ -1,4 +1,4 @@
-# Python-Live-Project
+# Python Project
 
 #### OVERVIEW
 I worked on a scrum team developing a web application within the Django Framework. The main app hosts a variety of sub-apps pertaining to individual hobbies. I developed a sub-app called GardenApp, building in CRUD functionality. The GardenApp allows users to store information about their individual vegetables into two databases, one pertaining to planning each vegetable (growing zone, sowing time frame, general care needs); and another that tracks each vegetable throughout the growing season and harvest (harvest yield, observations, weather events, etc). As repository, the GardenApp allows users to pull up relevant information across years either for reuse or to compare data like harvest yields, techniques that worked, didn't work, or environmental factors such as a major weather event that may have played a role in harvest production.
